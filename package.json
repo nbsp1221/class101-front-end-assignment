@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/nbsp1221/class101-front-end-task#readme",
   "dependencies": {
+    "open-color": "^1.7.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0"
