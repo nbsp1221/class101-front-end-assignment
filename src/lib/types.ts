@@ -11,5 +11,5 @@ export interface Coupon {
   type: 'rate' | 'amount';
   title: string;
   discountRate?: number;
-  discountValue?: number;
+  discountAmount?: number;
 }
