@@ -1,0 +1,22 @@
+@import '~open-color/open-color';
+
+div.checkbox {
+  & > input {
+    display: none;
+  }
+
+  & > label {
+    cursor: pointer;
+    display: block;
+
+    & > .icon-area {
+      color: $oc-gray-4;
+      display: inline-block;
+      font-size: 22px;
+
+      &.is-checked {
+        color: $oc-orange-5;
+      }
+    }
+  }
+}
