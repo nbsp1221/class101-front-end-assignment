@@ -1,0 +1,99 @@
+@import '~open-color/open-color';
+
+div.cart-product-item {
+  display: flex;
+
+  & > .checkbox-area {
+    margin-right: 20px;
+  }
+
+  & > .cover-image-area {
+    height: 150px;
+    margin-right: 20px;
+    width: 150px;
+
+    & > img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  & > .contents-area {
+    flex: 1;
+    position: relative;
+
+    & > .title-area {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 5px;
+    }
+
+    & > .impossible-coupon-area {
+      color: $oc-gray-6;
+      font-size: 14px;
+    }
+
+    & > .quantity-area {
+      bottom: 0;
+      position: absolute;
+
+      & > button {
+        background-color: white;
+        border: 1px solid $oc-gray-5;
+        cursor: pointer;
+        font-size: 14px;
+        height: 40px;
+        outline: none;
+        width: 40px;
+      }
+
+      & > input {
+        border: 1px solid $oc-gray-5;
+        font-size: 14px;
+        height: 40px;
+        margin: 0 8px;
+        outline: none;
+        text-align: center;
+        width: 80px;
+
+        &:focus {
+          border-color: black;
+        }
+      }
+    }
+  }
+
+  & > .side-area {
+    border-left: 1px solid $oc-gray-3;
+    margin-left: 20px;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+    width: 180px;
+
+    & > .price-area {
+      & > .value-area {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    & > .delete-area {
+      bottom: 0;
+      left: 20px;
+      position: absolute;
+      right: 20px;
+
+      & > button {
+        background-color: $oc-red-6;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        height: 40px;
+        outline: none;
+        width: 100%;
+      }
+    }
+  }
+}
