@@ -1,8 +1,18 @@
 import React from 'react';
+import Header from '../../components/layouts/Header';
+import Container from '../../components/layouts/Container';
+import CartOrderBodySystem from '../../systems/CartOrderBody';
 
 const CartPage: React.FunctionComponent = () => {
   return (
-    <div>CartPage</div>
+    <>
+      <Header />
+      <main>
+        <Container>
+          <CartOrderBodySystem />
+        </Container>
+      </main>
+    </>
   );
 };
 
