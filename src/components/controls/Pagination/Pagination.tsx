@@ -70,4 +70,4 @@ const Pagination: React.FunctionComponent<Props> = (props) => {
   );
 };
 
-export default Pagination;
+export default React.memo(Pagination);
