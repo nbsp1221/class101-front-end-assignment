@@ -1,0 +1,23 @@
+div.product-display {
+  padding: 40px 0;
+
+  & > h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  & > ul {
+    height: 380px;
+    margin-bottom: 25px;
+
+    & > li {
+      float: left;
+      margin-right: 20px;
+      width: calc(20% - 16px);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
