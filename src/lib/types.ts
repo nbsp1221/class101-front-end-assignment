@@ -1,3 +1,5 @@
+export type CouponType = 'rate' | 'amount';
+
 export interface ProductItem {
   id: string;
   title: string;
@@ -8,7 +10,7 @@ export interface ProductItem {
 }
 
 export interface Coupon {
-  type: 'rate' | 'amount';
+  type: CouponType;
   title: string;
   discountRate?: number;
   discountAmount?: number;
