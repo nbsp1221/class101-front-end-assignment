@@ -43,8 +43,12 @@ const CartProductItem: React.FunctionComponent<Props> = (props: Props) => {
   }, [productItem]);
 
   const onChangeInputQuantity = React.useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.validity.valid && event.target.value !== '') {
-      onSetQuantity(productItem.id, parseInt(event.target.value, 10));
+    if (event.target.validity.valid) {
+      const quantity = parseInt(event.target.value, 10);
+
+      if (quantity > 0) {
+        onSetQuantity(productItem.id, quantity);
+      }
     }
   }, []);
 
