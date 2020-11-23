@@ -1,0 +1,31 @@
+@import '~open-color/open-color';
+
+header.header {
+  border-bottom: 1px solid $oc-gray-2;
+  box-shadow: 0 0 8px 0 $oc-gray-2;
+
+  .header-area {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    & > h1 {
+      font-size: 30px;
+    }
+
+    & > .link-area {
+      overflow: hidden;
+
+      & > li {
+        float: left;
+        margin-left: 30px;
+
+        & > a {
+          color: $oc-gray-7;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
