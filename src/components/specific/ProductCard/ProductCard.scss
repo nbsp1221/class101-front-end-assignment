@@ -1,0 +1,58 @@
+@import '~open-color/open-color';
+
+div.product-card {
+  border: 1px solid $oc-gray-2;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px $oc-gray-2;
+  overflow: hidden;
+  width: 100%;
+
+  & > .cover-image-area {
+    height: 225px;
+
+    & > img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  & > .contents-area {
+    padding: 15px;
+
+    & > .title-area {
+      font-size: 14px;
+      height: 36px;
+      line-height: 18px;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+
+    & > .price-area {
+      margin-bottom: 20px;
+
+      & > .value-area {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    & > .button-area {
+      & > button {
+        background-color: $oc-orange-5;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        outline: none;
+        padding: 6px;
+        width: 100%;
+      }
+
+      &.is-in-cart {
+        & > button {
+          background-color: $oc-gray-7;
+        }
+      }
+    }
+  }
+}
