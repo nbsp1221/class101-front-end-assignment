@@ -1,5 +1,5 @@
 {
-  "name": "class101-front-end-task",
+  "name": "class101-front-end-assignment",
   "version": "1.0.0",
   "private": true,
   "main": "src/index.tsx",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nbsp1221/class101-front-end-task.git"
+    "url": "git+https://github.com/nbsp1221/class101-front-end-assignment.git"
   },
   "author": "nbsp1221",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nbsp1221/class101-front-end-task/issues"
+    "url": "https://github.com/nbsp1221/class101-front-end-assignment/issues"
   },
-  "homepage": "https://github.com/nbsp1221/class101-front-end-task#readme",
+  "homepage": "https://github.com/nbsp1221/class101-front-end-assignment#readme",
   "dependencies": {
     "classnames": "^2.2.6",
     "open-color": "^1.7.0",

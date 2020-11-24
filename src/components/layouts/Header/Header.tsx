@@ -8,7 +8,7 @@ const Header: React.FunctionComponent = () => {
     <header className="header">
       <Container>
         <div className="header-area">
-          <h1>CLASS101 Front-End Task</h1>
+          <h1>CLASS101 Front-End Assignment</h1>
           <ul className="link-area">
             <li>
               <Link to="/products">Products</Link>
